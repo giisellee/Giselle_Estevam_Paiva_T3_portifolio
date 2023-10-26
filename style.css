@@ -1,0 +1,160 @@
+/* CONFIGURAÇÕES GERAIS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #6897de;
+    height: 100vh;
+}
+/*  */
+
+/* CONFIGURAÇÃO HOME */
+.home {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header > .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #4d4848;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.30);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #edededd2;
+}
+
+.texto-site {
+    margin-top: 10;
+    text-align: center;
+    color: #fff;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+span {
+    font-size: 40px;
+    line-height: 100px;
+    color: #fff;
+}
+
+/* ANIMAÇÃO DE IMAGEM */
+.topo-do-site .img-topo-do-site img{
+    position: relative;
+    animation: flutuando 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuando{
+    0%{
+        top: 0;  
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILLO DAS FORMAÇÕES*/
+section .formacoes {
+    padding: 40px 4%;
+}
+
+section.formacoes .flex {
+    gap: 60px;
+}
+
+
+h1.titulo{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.formacoes .formacoes-box {
+    padding: 40px;
+    border: 2px solid #fff;
+    margin-top: 25px;
+    border-radius: 20px;
+    transition: .2s;
+
+}
+
+.formacoes .formacoes-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;
+}
+
+.formacoes .formacoes-box i{
+    font-size: 50px;
+    color: #fff;
+}
+
+.formacoes .formacoes-box h3{
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.formacoes .formacoes-box p{
+    text-align: center;
+}
